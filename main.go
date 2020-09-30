@@ -6,13 +6,13 @@ func main() {
 	var num float64
 	fmt.Scan(&num)
 	result := e(num)
-	fmt.Printf("%.2f", result)
+	fmt.Printf("%.3f", result)
 }
 
 func e(num float64) float64 {
 	var eu, i float64
-	eu = 1
-	for i = 1; i <= num; i++ {
+	eu = 0
+	for i = 0; i <= num; i++ {
 		ft := fact(i)
 		acomulado := eu + (1 / ft)
 		eu = acomulado
